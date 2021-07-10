@@ -25,7 +25,21 @@ namespace StackAndQueue
             }
         }
 
-        
+        public void Dequeue()
+        {
+            if (this.front == null)
+            {
+                Console.WriteLine("Queue is Empty");
+                return;
+            }
+            else
+            {
+
+                this.front = this.front.next;
+                return;
+            }
+
+        }
 
         public void Display()
         {

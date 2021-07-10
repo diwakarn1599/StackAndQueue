@@ -48,7 +48,7 @@ namespace StackAndQueue
                 top = top.next;
             }
         }
-
+        
         public void Display()
         {
             Node temp = this.top;
