@@ -35,6 +35,19 @@ namespace StackAndQueue
                 Console.WriteLine($"Top element of stack is {this.top.data}");
             }
         }
+        public void Pop()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("Stack doesn't contains any value");
+            }
+            else
+            {
+                
+                Console.WriteLine($"Popped element => {top.data}");
+                top = top.next;
+            }
+        }
 
         public void Display()
         {
