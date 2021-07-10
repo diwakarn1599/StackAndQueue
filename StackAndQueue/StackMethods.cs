@@ -7,6 +7,8 @@ namespace StackAndQueue
     class StackMethods
     {
         Node top;
+
+        //Method to push data
         public void Push(int data)
         {
             Node temp = new Node(data);
@@ -19,6 +21,19 @@ namespace StackAndQueue
                 temp.next = this.top;
             }
             this.top = temp;
+        }
+
+
+        public void Peek()
+        {
+            if(this.top == null)
+            {
+                Console.WriteLine("Stack doesn't contains any value");
+            }
+            else
+            {
+                Console.WriteLine($"Top element of stack is {this.top.data}");
+            }
         }
 
         public void Display()

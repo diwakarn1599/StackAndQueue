@@ -13,6 +13,7 @@ namespace StackAndQueue
             stack.Push(76);
             stack.Push(30);
             stack.Display();
+            stack.Peek();
         }
     }
 }
