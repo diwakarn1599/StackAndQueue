@@ -6,16 +6,16 @@ namespace StackAndQueue
     {
         static void Main(string[] args)
         {
-            StackMethods stack = new StackMethods();
-            Console.WriteLine("Stack And Queue");
 
-            stack.Push(50);
-            stack.Push(76);
-            stack.Push(30);
-            stack.Display();
-            stack.Peek();
-            stack.Pop();
-            stack.Display();
+            QueueMethods queue = new QueueMethods();
+            Console.WriteLine("Stack And Queue");
+            queue.Enqueue(30);
+            queue.Enqueue(50);
+            queue.Enqueue(76);
+            queue.Display();
+            queue.Dequeue();
+            queue.Display();
+
         }
     }
 }
